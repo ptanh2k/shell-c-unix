@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Nhap ten: "
+read name
+echo "Nhap so dien thoai: "
+read phoneNum
+echo -e "$name\t$i\t$phoneNum" >> phonebook

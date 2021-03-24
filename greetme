@@ -1,0 +1,11 @@
+#!/bin/bash
+#Tuan Anh
+echo "Hello $USER"
+echo `date`
+echo `cal`
+echo `hostname`
+echo `cat /etc/os-release`
+echo `ls`
+echo `du`
+echo `id`
+echo "Lam on, ban cho co the cho toi vay \$VND 50000 duoc khong?"

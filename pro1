@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "I like $HER"
+HER="Lan Anh"
+echo "I love $HER"
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -r OCTA_DIGITS="01234567"
+
+dec_value=$1
+octa_value=""
+
+until [ $dec_value == 0 ]; do
+	rem_value=$((dec_value % 8))
+	dec_value=$((dec_value / 8))
+
+	octa_digit=${OCTA_DIGITS:$rem_value:1}
+
+	octa_value="${octa_digit}${octa_value}"
+
+done
+
+echo -e "${octa_value}"

@@ -1,0 +1,15 @@
+sed -i 's/Cong/Coong/' datafile
+
+sed '1,3d' datafile
+
+sed -n '5,9p' datafile
+
+sed '/Mai/d' datafile
+
+sed -n '/5\./p' datafile
+
+sed '$a THE END' datafile
+
+sed '$d' datafile > lastLine
+
+

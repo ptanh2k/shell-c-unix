@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd Desktop
+
+for file in *; do
+	if [ ${file: -4} == ".txt" ]; then
+		count=`grep -e 'khung bo' -e 'bom' $file | wc -l`
+		if [ $count -gt 0 ]; then 
+				echo "Name of file : $file"
+			else 
+				echo "Safe"
+		fi
+	fi
+	sleep 10
+done
+
+

@@ -1,0 +1,12 @@
+cd /var/spool/mail
+size=`wc -c lanh | awk '{print $1}'`
+while true;
+do
+	newSize=`wc -c lanh | awk '{print $1}'`
+	if [ $newSize -gt $size ]
+	   then 
+		echo "New mail"
+	fi
+	sleep 5
+done
+

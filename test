@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in `ls Desktop`; do
+	grep "khung bo" file && echo $status
+done
+
